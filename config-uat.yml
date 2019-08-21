@@ -1,5 +1,6 @@
 server:
   port: 8051
+
 spring:
   # 集群内配置刷新消息队列
   rabbitmq:
@@ -19,12 +20,12 @@ spring:
   zipkin:
     base-url: http://localhost:9411
 
- sleuth:
-   web:
-     client:
-       enabled: true
-   sampler:
-     probability: 1.0 #采样比例0～1之间，1全部采样
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0 #采样比例0～1之间，1全部采样
 
 # spring cloud bus 开启刷新相关接口
 management:
