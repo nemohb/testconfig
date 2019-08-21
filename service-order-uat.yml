@@ -1,0 +1,22 @@
+server:
+  port: 8021
+
+spring:
+  application:
+    name: service-order
+  # 分布式调用链服务端配置
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1.0 #采样比例0～1之间，1全部采样
+    feign:
+      enabled: true
+    web:
+      client:
+        enabled: true
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8010/eureka/
