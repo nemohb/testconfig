@@ -29,3 +29,10 @@ spring:
     web:
       client:
         enabled: true
+
+# spring cloud bus 开启刷新相关接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
