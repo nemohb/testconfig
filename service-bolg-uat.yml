@@ -36,6 +36,14 @@ feign:
   hystrix:
     # 在feign中开启hystrix功能，默认情况下feign不开启hystrix功能
     enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
 # spring cloud bus 开启刷新相关接口
 management:
   endpoints:
