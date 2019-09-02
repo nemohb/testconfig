@@ -1,5 +1,5 @@
 server:
-  port: 8021
+  port: 8020
 
 spring:
   # 集群内配置刷新消息队列
